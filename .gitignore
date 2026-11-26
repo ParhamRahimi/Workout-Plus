@@ -1,0 +1,39 @@
+# macOS and Xcode local state
+.DS_Store
+xcuserdata/
+*.xcuserstate
+
+# Build products and archives
+/build/
+/DerivedData/
+*.xcarchive
+*.ipa
+*.dSYM/
+*.zip
+*.bak
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision
+*.local.json
+
+# Python and generated assets
+__pycache__/
+*.py[cod]
+.image_cache/
+
+# Personal workout exports, reviews, and equipment photos
+/Tools/*backup*.json
+/Tools/workout-review-*.md
+/Tools/full-body-*.json
+/Tools/machines/
+
+# Local signing overrides, private audits, and test output
+*.local.xcconfig
+/PUBLIC-READINESS-2026-11-26.md
+/.build/
+/TestResults/

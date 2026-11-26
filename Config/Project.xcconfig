@@ -1,0 +1,5 @@
+// Override these settings in the ignored Signing.local.xcconfig for your device.
+WORKOUT_DEVELOPMENT_TEAM =
+WORKOUT_BUNDLE_IDENTIFIER = org.workoutplus.app
+WORKOUT_APP_GROUP = group.org.workoutplus.app
+#include? "Signing.local.xcconfig"

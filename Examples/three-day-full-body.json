@@ -1,0 +1,593 @@
+{
+  "id": "full-body-three-day",
+  "name": "Three-Day Full-Body Plan",
+  "summary": "Rotate A, B, and C on nonconsecutive days. This example emphasizes shoulders and arms alongside legs, pulling, and core. Each workout has 21 working sets. Warm up with easy movement and lighter sets. Choose loads individually, keep 1–3 controlled repetitions in reserve, and stop for pain or technique breakdown. Rest longer when needed. Reduce accessory volume if recovery or available time requires it. This is an editable example, not an individualized prescription or a guaranteed session duration.",
+  "daysPerWeek": 3,
+  "rotation": [
+    "A",
+    "B",
+    "C"
+  ],
+  "workouts": [
+    {
+      "id": "A",
+      "name": "Workout A — Pull-up, Chest & Side Delts",
+      "focus": "Full-body strength; adjust volume and exercise selection to experience, recovery, and available time.",
+      "exercises": [
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/1.jpg"
+          ],
+          "category": "Back",
+          "feel": "Sides of the upper back (lats) and the outer back below the armpit.",
+          "repRangeHigh": 8,
+          "steps": [
+            "Use a comfortable overhand grip around shoulder-width or slightly wider. If using the assisted machine, choose enough help for controlled reps.",
+            "Start with straight arms through a comfortable range. Pull without kicking until your chin clears the bar without craning your neck.",
+            "Lower smoothly to the starting position. Keep the same machine, grip, and range for progress comparisons."
+          ],
+          "isTimed": false,
+          "isBodyweight": true,
+          "tip": "Turn Assisted on when logging assistance; less assistance means a harder set. Turn it off for bodyweight or added load. Choose assistance that permits controlled repetitions.",
+          "repRangeLow": 5,
+          "name": "Pull-up",
+          "restSeconds": 120,
+          "id": "pull-up",
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+          ],
+          "category": "Legs",
+          "feel": "Front of the thighs (quads) and glutes.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Set the seat and safeties; keep your back and hips supported, feet in a comfortable position around shoulder-width.",
+            "Lower slowly through a comfortable range while your pelvis stays supported. Depth depends on your control and machine setup, rather than an exact knee angle.",
+            "Press through the whole foot without bouncing or forcefully locking the knees."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Leg Press",
+          "restSeconds": 120,
+          "id": "leg-press",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/1.jpg"
+          ],
+          "category": "Chest",
+          "feel": "Across the chest, with help from the front shoulders and triceps.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Lie flat, a dumbbell in each hand, arms extended over your chest, shoulder blades pulled back into the bench.",
+            "Lower the dumbbells out and down until they're level with your chest, elbows about 45 degrees from your body.",
+            "Press back up to the start without banging the dumbbells together."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Dumbbell Flat Bench Press",
+          "restSeconds": 120,
+          "id": "dumbbell-flat-bench-press",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 4,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg"
+          ],
+          "category": "Shoulders",
+          "feel": "Side of the shoulders (lateral deltoids).",
+          "repRangeHigh": 20,
+          "steps": [
+            "Stand tall with a dumbbell in each hand, knees soft, and elbows slightly bent.",
+            "Raise your arms out and slightly forward to about shoulder height, or a lower comfortable height. Keep wrists in line with your forearms.",
+            "Lower under control without swinging your body or shrugging to finish the rep."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 12,
+          "name": "Dumbbell Lateral Raise",
+          "restSeconds": 60,
+          "id": "dumbbell-lateral-raise",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/1.jpg"
+          ],
+          "category": "Arms",
+          "feel": "Front of the upper arm (biceps).",
+          "repRangeHigh": 12,
+          "steps": [
+            "Stand tall, a dumbbell in each hand, palms facing forward, elbows pinned to your sides.",
+            "Curl the weights up toward your shoulders, squeeze at the top.",
+            "Lower all the way down slowly until your arms are straight."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Dumbbell Biceps Curl",
+          "restSeconds": 75,
+          "id": "dumbbell-biceps-curl",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/1.jpg"
+          ],
+          "category": "Calves",
+          "feel": "Calf muscles working through controlled ankle movement.",
+          "repRangeHigh": 15,
+          "steps": [
+            "Set the machine for your height. Stand with the balls of your feet firmly on its platform, shoulders under the pads, and knees near straight without a forceful lock.",
+            "Lower your heels through a comfortable stretch while keeping your feet secure, then rise onto the balls of your feet.",
+            "Pause briefly and lower slowly without bouncing or bending the knees to drive the load."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Standing Calf Raise",
+          "restSeconds": 60,
+          "id": "standing-calf-raise",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press_With_Rotation/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press_With_Rotation/1.jpg"
+          ],
+          "category": "Core",
+          "feel": "Abdominals resisting the sideways pull while your torso stays still.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Set one pulley at chest height. Stand SIDE-ON to the pulley: the machine is beside you, not in front of you. Feet about shoulder-width, knees soft.",
+            "Hold one handle in both hands at the center of your chest. Step sideways away from the stack until the cable is taut, then brace.",
+            "Press your hands straight forward from your chest. Hold 1-2 seconds with hips and shoulders facing forward, then return slowly.",
+            "Complete the reps, turn to put the other side toward the pulley, and repeat. One logged set includes both sides; log reps per side."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Pallof Press",
+          "restSeconds": 60,
+          "id": "pallof-press",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Workout B — Shoulders, Back & Forearms",
+      "focus": "Full-body strength; adjust volume and exercise selection to experience, recovery, and available time.",
+      "exercises": [
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg"
+          ],
+          "category": "Shoulders",
+          "feel": "The tops of your shoulders (front and side delts).",
+          "repRangeHigh": 12,
+          "steps": [
+            "Sit upright, dumbbells at shoulder height, palms facing forward.",
+            "Press up and slightly in until your arms are nearly straight overhead.",
+            "Lower under control back down to ear level."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Dumbbell Shoulder Press",
+          "restSeconds": 120,
+          "id": "dumbbell-shoulder-press",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Iso_Row/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Iso_Row/1.jpg"
+          ],
+          "category": "Back",
+          "feel": "Mid-back and lats, with rear shoulders and biceps assisting.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Use a seated row machine with a chest pad; follow its setup instructions. Set the seat so the chest pad supports your sternum comfortably, with feet on the foot supports or stable on the floor as the machine allows.",
+            "If the chest pad adjusts, set it so you can reach the handles with near-straight arms while keeping your chest supported. Lock all adjustments and choose a manageable stack weight.",
+            "Start with the vertical handles, palms facing each other, if comfortable for your wrists. The horizontal handles are also suitable; use the same grip for this training block.",
+            "Pull the handles toward the sides of your ribs while keeping your chest on the pad. Let your shoulder blades move naturally; avoid shrugging, rocking backward, or forcing the elbows far behind your torso.",
+            "Return slowly to a comfortable arm extension without lifting your chest from the pad or letting the stack slam."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Seated Chest-Supported Machine Row",
+          "restSeconds": 120,
+          "id": "seated-chest-supported-machine-row",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [],
+          "category": "Posterior Chain",
+          "feel": "Glutes and hamstrings extending the hips; abdominals and lower-back muscles help hold a steady, comfortable neutral spine.",
+          "repRangeHigh": 15,
+          "steps": [
+            "Use the horizontal GHD-style bench shown in your reference. Adjust and lock the foot support while off the bench. Use the footplate and ankle rollers as designed so your feet cannot slip.",
+            "Adjust the distance from the foot support to the large thigh pad so your upper thighs are supported and your hip crease is just beyond the front edge. Your hips must be free to fold; do not trap your abdomen on top of the pad.",
+            "Choose a foot-support height that secures your feet and permits a comfortable supported position with knees near straight but not forcefully locked. The lowest setting is not automatically the correct one. Have gym staff check this setup once.",
+            "Start with bodyweight and arms crossed. Brace gently and lower your torso by bending at the hips, keeping your spine steady, only as far as you can control comfortably.",
+            "Use your glutes and hamstrings to raise the torso until it lines up with the legs. Stop there; do not arch above that line, bounce, or turn it into a knee-bending glute-ham raise."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Back Extension (GHD Hip Hinge)",
+          "restSeconds": 90,
+          "isBodyweight": false,
+          "id": "back-extension-ghd-hip-hinge",
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/1.jpg"
+          ],
+          "category": "Legs",
+          "feel": "Back of the thighs (hamstrings).",
+          "repRangeHigh": 15,
+          "steps": [
+            "Lie face down and adjust the machine so your knee joint lines up with its pivot and the roller rests on your lower calves just above the heels.",
+            "Hold the handles and keep hips against the pad. Bend your knees to curl the roller upward through a comfortable range.",
+            "Lower slowly toward a near-straight knee without bouncing, lifting your hips, or arching your lower back to move the weight."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Lying Leg Curl",
+          "restSeconds": 75,
+          "id": "lying-leg-curl",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rear_Delt_Fly/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rear_Delt_Fly/1.jpg"
+          ],
+          "category": "Upper Back",
+          "feel": "Back of the shoulders, with the upper back assisting; keep it a shoulder-opening movement rather than a heavy row.",
+          "repRangeHigh": 20,
+          "steps": [
+            "Use your compact dual-adjustable-pulley station. Move both pulley carriages to about shoulder height and lock them at the same height. Select a light, equal load on the two stacks.",
+            "Face the station. Hold the left cable handle in your right hand and the right cable handle in your left hand, crossing the cables in front of you.",
+            "Step back enough that your hands clear the pulley columns and the cables stay taut. Keep feet stable, ribs steady, and elbows softly bent.",
+            "Open your arms outward in a controlled arc to roughly shoulder level, stopping around the line of your torso. Allow natural shoulder-blade movement without forcing an exaggerated squeeze or turning the motion into a row.",
+            "Bring your hands back slowly without letting the weights crash. If crossed handles rub or the station is awkward, do one arm at a time from the opposite pulley; complete both arms as one logged set."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 12,
+          "name": "Cable Rear Delt Fly",
+          "restSeconds": 60,
+          "id": "cable-rear-delt-fly",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/1.jpg"
+          ],
+          "category": "Arms",
+          "feel": "Back of the upper arms (triceps).",
+          "repRangeHigh": 15,
+          "steps": [
+            "Set a pulley high and choose a comfortable rope, V-bar, or straight-bar attachment. Stand facing it with elbows near your sides and wrists comfortable.",
+            "Start with elbows bent around 90 degrees. Straighten your elbows to bring your hands toward your thighs without moving your upper arms or leaning your body onto the handle.",
+            "Return slowly to the starting bend. Keep your torso still and use a smooth, pain-free range."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Cable Triceps Pushdown",
+          "restSeconds": 75,
+          "id": "cable-triceps-pushdown",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg"
+          ],
+          "category": "Core",
+          "feel": "Abdominals curling the pelvis upward, with hip flexors lifting the thighs; hanging also challenges grip.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Choose and record one variation: forearm-supported bent-knee raise, forearm-supported straight-leg raise, or hanging bent-knee raise. Keep that variation consistent for comparisons.",
+            "For the hanging version, grip the bar, lightly engage your shoulders, brace your abdomen, and wait until your body is still.",
+            "Bring bent knees upward and gently curl your pelvis toward your ribs. Raise only as high as you can without kicking or swinging.",
+            "Lower over about 2 seconds and pause until still before starting again. End the set when you cannot control the swing."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 6,
+          "name": "Hanging Knee / Leg Raise",
+          "isBodyweight": true,
+          "restSeconds": 60,
+          "id": "hanging-knee-leg-raise",
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_One-Arm_Dumbbell_Palms-Up_Wrist_Curl/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_One-Arm_Dumbbell_Palms-Up_Wrist_Curl/1.jpg"
+          ],
+          "category": "Forearms",
+          "feel": "Palm-side forearm muscles (wrist flexors).",
+          "repRangeHigh": 20,
+          "steps": [
+            "Sit and support a forearm on your thigh or a bench, palm up and wrist just beyond the edge. Hold a light dumbbell securely.",
+            "Lower the hand only through a comfortable range, then curl the palm upward using the wrist. Keep the forearm supported.",
+            "Lower slowly. Repeat with the other hand; one logged set includes both hands and reps are per hand."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 15,
+          "name": "Dumbbell Wrist Curl",
+          "restSeconds": 60,
+          "id": "dumbbell-wrist-curl",
+          "isBodyweight": false,
+          "weightIncrementKg": 0.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_One-Arm_Dumbbell_Palms-Down_Wrist_Curl/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_One-Arm_Dumbbell_Palms-Down_Wrist_Curl/1.jpg"
+          ],
+          "category": "Forearms",
+          "feel": "Back/top of the forearms (wrist extensors).",
+          "repRangeHigh": 20,
+          "steps": [
+            "Sit and support a forearm on your thigh or a bench, palm down and wrist just beyond the edge. Use a very light dumbbell.",
+            "Lift the back of the hand through a comfortable range without lifting the forearm or bending the elbow.",
+            "Lower slowly and repeat on the other hand. One logged set includes both hands; log reps per hand."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 15,
+          "name": "Dumbbell Reverse Wrist Curl",
+          "restSeconds": 60,
+          "id": "dumbbell-reverse-wrist-curl",
+          "isBodyweight": false,
+          "weightIncrementKg": 0.5
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Workout C — Chest, Side Delts & Arms",
+      "focus": "Full-body strength; adjust volume and exercise selection to experience, recovery, and available time.",
+      "exercises": [
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/1.jpg"
+          ],
+          "category": "Back",
+          "feel": "Lats plus a strong biceps contribution.",
+          "repRangeHigh": 8,
+          "steps": [
+            "Use a comfortable shoulder-width underhand grip. If using the assisted machine, choose enough help for controlled reps.",
+            "Start with straight arms through a comfortable range. Pull without kicking until your chin clears the bar without craning your neck.",
+            "Lower smoothly to the starting position. Keep the same machine, grip, and range for progress comparisons."
+          ],
+          "isTimed": false,
+          "isBodyweight": true,
+          "tip": "Turn Assisted on when logging assistance; less assistance means a harder set. Turn it off for bodyweight or added load. Choose assistance that permits controlled repetitions.",
+          "repRangeLow": 5,
+          "name": "Chin-up",
+          "restSeconds": 120,
+          "id": "chin-up",
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+          ],
+          "category": "Legs",
+          "feel": "Front of the thighs (quads) and glutes.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Set the safeties and get your shoulders, back and hips supported by the pads. Place feet about shoulder-width or in a comfortable position for this machine.",
+            "Release the safeties and bend your knees through the deepest range you can control comfortably without lifting your hips/back off the pad. Let knees follow the direction of the toes.",
+            "Push through the whole foot to stand smoothly, without bouncing at the bottom or forcefully locking the knees."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Hack Squat",
+          "restSeconds": 120,
+          "id": "hack-squat",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Incline_Chest_Press/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Incline_Chest_Press/1.jpg"
+          ],
+          "category": "Chest",
+          "feel": "The upper part of your chest.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Set the seat so the handles line up with your upper chest; back flat against the pad.",
+            "Press the handles forward and slightly up until your arms are nearly straight.",
+            "Return under control."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Incline Chest Press (Machine)",
+          "restSeconds": 120,
+          "id": "incline-chest-press-machine",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg"
+          ],
+          "category": "Shoulders",
+          "feel": "Side of the shoulders (lateral deltoids).",
+          "repRangeHigh": 20,
+          "steps": [
+            "Stand tall with a dumbbell in each hand, knees soft, and elbows slightly bent.",
+            "Raise your arms out and slightly forward to about shoulder height, or a lower comfortable height. Keep wrists in line with your forearms.",
+            "Lower under control without swinging your body or shrugging to finish the rep."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 12,
+          "name": "Dumbbell Lateral Raise",
+          "restSeconds": 60,
+          "id": "dumbbell-lateral-raise",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 3,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/1.jpg"
+          ],
+          "category": "Arms",
+          "feel": "Front of the upper arm plus the top of the forearm (brachioradialis).",
+          "repRangeHigh": 12,
+          "steps": [
+            "Stand with a dumbbell in each hand, palms facing your body (thumbs up).",
+            "Keeping elbows at your sides, curl the weights up holding that neutral 'hammer' grip.",
+            "Lower slowly."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Hammer Curl",
+          "restSeconds": 75,
+          "id": "hammer-curl",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/1.jpg"
+          ],
+          "category": "Arms",
+          "feel": "Back of the upper arms (triceps).",
+          "repRangeHigh": 15,
+          "steps": [
+            "Set a pulley high and choose a comfortable rope, V-bar, or straight-bar attachment. Stand facing it with elbows near your sides and wrists comfortable.",
+            "Start with elbows bent around 90 degrees. Straighten your elbows to bring your hands toward your thighs without moving your upper arms or leaning your body onto the handle.",
+            "Return slowly to the starting bend. Keep your torso still and use a smooth, pain-free range."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Cable Triceps Pushdown",
+          "restSeconds": 75,
+          "id": "cable-triceps-pushdown",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/1.jpg"
+          ],
+          "category": "Calves",
+          "feel": "Calf muscles working through controlled ankle movement.",
+          "repRangeHigh": 15,
+          "steps": [
+            "Set the machine for your height. Stand with the balls of your feet firmly on its platform, shoulders under the pads, and knees near straight without a forceful lock.",
+            "Lower your heels through a comfortable stretch while keeping your feet secure, then rise onto the balls of your feet.",
+            "Pause briefly and lower slowly without bouncing or bending the knees to drive the load."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Standing Calf Raise",
+          "restSeconds": 60,
+          "id": "standing-calf-raise",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        },
+        {
+          "sets": 2,
+          "imageURLs": [
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Crunch/0.jpg",
+            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Crunch/1.jpg"
+          ],
+          "category": "Core",
+          "feel": "Abdominals curling the torso, with hip flexors also helping as you sit farther up.",
+          "repRangeHigh": 15,
+          "steps": [
+            "Use the inclined sit-up bench with your feet at its raised end and your head toward the lower end. If adjustable, start with a shallow decline and lock the bench angle.",
+            "Secure your feet/ankles in the padded restraint as the bench is designed, keep knees bent, and sit on the pad. Check the restraint before leaning back; do not press a roller into the knee joint.",
+            "Cross your arms over your chest. Lower under control until your back is supported by the bench, or stop earlier if needed to keep the movement comfortable.",
+            "Exhale and curl your torso upward, then continue toward your thighs for a sit-up only through a range you can control. Keep your head in line with your torso and avoid pulling on your neck.",
+            "Lower smoothly and repeat without bouncing off the bench or throwing your arms."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1–2 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 10,
+          "name": "Decline Bench Sit-Up",
+          "isBodyweight": false,
+          "restSeconds": 60,
+          "id": "decline-bench-sit-up",
+          "weightIncrementKg": 2.5
+        }
+      ]
+    }
+  ]
+}

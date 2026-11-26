@@ -1,0 +1,32 @@
+name: Build and data safety
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require Xcode 26 or later
+        run: |
+          xcodebuild -version
+          python3 -c 'import subprocess; v=subprocess.check_output(["xcodebuild","-sdk","iphonesimulator","-version","SDKVersion"],text=True).strip(); assert int(v.split(".")[0]) >= 26, "Select an Xcode installation with the iOS 26+ SDK"'
+      - name: Check backups, migration, imports, and public samples
+        run: bash Tools/run_checks.sh
+      - name: Build app and widget
+        run: |
+          for config in Debug Release; do
+            xcodebuild -project 'Workout Plus.xcodeproj' -scheme 'Workout Plus' -configuration "$config" -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+          done
+      - name: Build UI tests
+        run: xcodebuild -project 'Workout Plus.xcodeproj' -scheme 'Workout Plus' -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build-for-testing
+      - name: Run isolated UI smoke tests
+        run: bash Tools/run_ui_checks.sh
+      - name: Preserve synthetic UI results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-results
+          path: TestResults/
+          retention-days: 7
+          if-no-files-found: ignore

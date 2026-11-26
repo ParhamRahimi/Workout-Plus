@@ -1,0 +1,38 @@
+{
+  "id": "sample-plan",
+  "name": "Sample Plan",
+  "summary": "Minimal format example. Adapt exercises and loads before training.",
+  "daysPerWeek": 1,
+  "rotation": [
+    "A"
+  ],
+  "workouts": [
+    {
+      "id": "A",
+      "name": "Workout A",
+      "focus": "Format example",
+      "exercises": [
+        {
+          "sets": 2,
+          "imageURLs": [],
+          "category": "Legs",
+          "feel": "Working muscles should feel effort; sharp pain is a reason to stop.",
+          "repRangeHigh": 12,
+          "steps": [
+            "Adjust the seat and safety stops.",
+            "Use a comfortable controlled range.",
+            "Keep the pelvis supported and stop for pain."
+          ],
+          "isTimed": false,
+          "tip": "Choose a manageable starting load. Increase by the smallest available step only after all prescribed sets reach the upper rep target with controlled technique and 1\u20132 repetitions in reserve. Record equipment and loading conventions consistently.",
+          "repRangeLow": 8,
+          "name": "Leg Press",
+          "restSeconds": 120,
+          "id": "leg-press",
+          "isBodyweight": false,
+          "weightIncrementKg": 2.5
+        }
+      ]
+    }
+  ]
+}
