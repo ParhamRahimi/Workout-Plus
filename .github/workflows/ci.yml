@@ -1,5 +1,13 @@
 name: Build and data safety
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      capture_gallery:
+        description: Capture the synthetic feature gallery on an isolated simulator
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -20,7 +28,9 @@ jobs:
           done
       - name: Build UI tests
         run: xcodebuild -project 'Workout Plus.xcodeproj' -scheme 'Workout Plus' -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build-for-testing
-      - name: Run isolated UI smoke tests
+      - name: Run isolated UI checks
+        env:
+          WORKOUT_CAPTURE_GALLERY: ${{ github.event_name == 'workflow_dispatch' && inputs.capture_gallery && '1' || '0' }}
         run: bash Tools/run_ui_checks.sh
       - name: Preserve synthetic UI results
         if: always()

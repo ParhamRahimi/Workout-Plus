@@ -101,6 +101,12 @@ struct Checks {
             let records = try ModelContext(migrated).fetch(FetchDescriptor<WorkoutSession>())
             try check(records.count == 1 && records[0].bodyweightKgAtTime == 80 && records[0].sets.first?.isAssisted == true, "actual previous global-model store upgrades without losing history")
         }
+        if let oldest = ProcessInfo.processInfo.environment["WORKOUT_OLDEST_STORE"] {
+            let config = ModelConfiguration(schema: schema, url: URL(fileURLWithPath: oldest))
+            let container = try ModelContainer(for: schema, migrationPlan: WorkoutPlusMigrationPlan.self, configurations: [config])
+            let records = try ModelContext(container).fetch(FetchDescriptor<WorkoutSession>())
+            try check(records.count == 1 && records[0].sets.count == 1 && records[0].sets[0].weightKg == 10 && records[0].sets[0].reps == 8 && records[0].bodyweightKgAtTime == nil, "oldest global-model store reporting 1.0 upgrades with records and relationships intact")
+        }
         // A read-only persistent store forces an actual restore-save failure.
         let readOnlyURL = temporary.appendingPathComponent("readonly.store")
         do {

@@ -7,7 +7,17 @@ import SwiftData
 
 @main
 struct Workout_PlusApp: App {
-    private let container = PersistenceSetup.makeContainer()
+    private let container: ModelContainer?
+    init() {
+        #if DEBUG && targetEnvironment(simulator)
+        if ScreenshotDemo.enabled {
+            // Fail closed: fixture failure must never fall through to real persistence.
+            container = try? ScreenshotDemo.makeContainer()
+        } else { container = PersistenceSetup.makeContainer() }
+        #else
+        container = PersistenceSetup.makeContainer()
+        #endif
+    }
     var body: some Scene {
         WindowGroup {
             if let container { RootView().modelContainer(container) }

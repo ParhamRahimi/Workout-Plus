@@ -37,3 +37,6 @@ __pycache__/
 /PUBLIC-READINESS-2026-11-26.md
 /.build/
 /TestResults/
+
+# Private device backups and local diagnostic material
+/.private/

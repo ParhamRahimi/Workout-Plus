@@ -11,9 +11,14 @@ xcrun swiftc -parse-as-library -default-isolation MainActor \
   'Workout Plus/Models/Models.swift' 'Workout Plus/Data/CategoryMap.swift' \
   Tests/Legacy/Writer.swift -module-cache-path "$CHECK_DIR/modules" -o "$CHECK_DIR/legacy"
 "$CHECK_DIR/legacy" "$CHECK_DIR/previous.store"
+xcrun swiftc -parse-as-library -default-isolation MainActor \
+  'Workout Plus/Models/Models.swift' 'Workout Plus/Data/CategoryMap.swift' \
+  Tests/Legacy/OldestWriter.swift -module-cache-path "$CHECK_DIR/modules" -o "$CHECK_DIR/oldest"
+"$CHECK_DIR/oldest" "$CHECK_DIR/oldest.store"
 mkdir -p "$CHECK_DIR/runtime"
 export TMPDIR="$CHECK_DIR/runtime/"
 export WORKOUT_CHECK_DIR="$CHECK_DIR"
+export WORKOUT_OLDEST_STORE="$CHECK_DIR/oldest.store"
 export WORKOUT_LEGACY_STORE="$CHECK_DIR/previous.store"
 xcrun swiftc -parse-as-library -default-isolation MainActor \
   'Workout Plus/Models/Models.swift' 'Workout Plus/Models/LogModels.swift' \
