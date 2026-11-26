@@ -40,7 +40,7 @@ Updated 26 November 2026. Build completion is not distribution approval.
   the old private repository public. Rewriting refs alone may leave old GitHub
   objects accessible by SHA; retain the old repository strictly private.
 - [x] First CI run passed: native checks, Debug/Release builds, compiled UI target, and all three isolated simulator smoke tests.
-- [ ] Enable public private-vulnerability reporting when repository visibility permits it; the private-repository endpoint is unavailable.
+- [x] Enable private vulnerability reporting, secret scanning, and push protection on the public repository.
 - [x] Add the PolyForm Noncommercial license, Parham Rahimi attribution, and source/asset provenance; code-drawn icon replaces the portrait asset.
 
 ## Requires an installed runtime or physical device
