@@ -44,7 +44,10 @@
   changes. Do not describe feature changes as just repository/privacy cleanup.
   Separate proposed UX changes from bug fixes and avoid unrelated redesigns.
 - Before installing a data-model update over the personal phone app, create and
-  verify a local backup of its app container if device tooling permits. Keep it
+  verify local backups of its app container AND every entitled App Group container
+  if device tooling permits. SwiftData may use the App Group automatically; an
+  app-container store can be an older leftover. Confirm the active store and
+  validate that store, rather than assuming the first SQLite file is current. Keep backups
   outside tracked source in a protected, ignored location. Stop rather than
   uninstalling, resetting, or overwriting records if backup/migration checks fail.
 - Preserve the existing personal bundle ID, App Group, signing team, and data

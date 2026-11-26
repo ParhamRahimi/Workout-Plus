@@ -12,8 +12,11 @@ final class FeatureGalleryTests: XCTestCase {
 
     private func demo() -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["--synthetic-screenshot-demo", "-hasCompletedWelcome", "YES", "-remoteImagesEnabled", "NO", "-showWorkoutDetails", "YES", "-appLockEnabled", "NO", "-hkSyncWorkouts", "NO", "-hkSyncBodyweight", "NO", "-hkWriteCalories", "NO", "-restAlertsEnabled", "NO", "-expiryAlertsEnabled", "NO"]
+        app.launchArguments = ["--synthetic-screenshot-demo", "-hasCompletedWelcome", "YES", "-remoteImagesEnabled", "NO", "-showWorkoutDetails", "YES", "-appLockEnabled", "NO", "-hkSyncWorkouts", "NO", "-hkSyncBodyweight", "NO", "-hkWriteCalories", "NO", "-restAlertsEnabled", "NO", "-restTimerEnabled", "YES", "-expiryAlertsEnabled", "NO"]
         app.launch()
+        if app.alerts["Unfinished workout"].waitForExistence(timeout: 2) {
+            app.alerts["Unfinished workout"].buttons["Discard"].tap()
+        }
         XCTAssertTrue(app.tabBars.buttons["Workouts"].waitForExistence(timeout: 15))
         return app
     }
@@ -22,7 +25,14 @@ final class FeatureGalleryTests: XCTestCase {
         capture.name = name; capture.lifetime = .keepAlways; add(capture)
     }
     private func reveal(_ element: XCUIElement, _ app: XCUIApplication) {
-        for _ in 0..<12 { if element.isHittable { return }; app.swipeUp() }
+        for _ in 0..<20 {
+            if element.isHittable { return }
+            let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.12, dy: 0.72))
+            let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.12, dy: 0.42))
+            if element.exists && element.frame.maxY < app.navigationBars.firstMatch.frame.maxY {
+                end.press(forDuration: 0.05, thenDragTo: start)
+            } else { start.press(forDuration: 0.05, thenDragTo: end) }
+        }
         XCTAssertTrue(element.isHittable, "Could not reveal \(element)")
     }
     private func tapText(_ text: String, _ app: XCUIApplication) {
@@ -111,12 +121,12 @@ final class FeatureGalleryTests: XCTestCase {
         shot("19-measurement-trends", app)
         let progress = app.staticTexts["Exercise progress"].firstMatch
         reveal(progress, app)
-        app.swipeUp()
         shot("20-exercise-progress", app)
-        let volume = app.staticTexts["Weekly volume"].firstMatch
+        let volume = app.buttons["By muscle"].firstMatch
         reveal(volume, app)
-        app.swipeUp()
         shot("21-weekly-volume", app)
+        app.buttons["By week"].tap()
+        shot("36-volume-by-week", app)
         for _ in 0..<3 { app.swipeUp() }
         shot("22-progress-summary", app)
         app.buttons["Export and back up your data"].tap()
@@ -166,4 +176,19 @@ final class FeatureGalleryTests: XCTestCase {
         privacy.tap()
         shot("33-privacy-policy", app)
     }
+
+    func testGallery07ImportAndCreation() {
+        let app = demo()
+        app.buttons["Plans"].tap()
+        app.buttons["Add plan"].tap()
+        app.buttons["Import JSON"].tap()
+        XCTAssertTrue(app.navigationBars["Import Plan"].waitForExistence(timeout: 5))
+        shot("34-import-plan", app)
+        app.buttons["Cancel"].tap()
+        app.buttons["Add plan"].tap()
+        app.buttons["Create plan"].tap()
+        XCTAssertTrue(app.textFields["Name"].waitForExistence(timeout: 5))
+        shot("35-create-plan", app)
+    }
+
 }

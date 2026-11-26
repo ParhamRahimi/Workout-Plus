@@ -16,8 +16,11 @@ if [[ "${WORKOUT_CAPTURE_GALLERY:-0}" == "1" ]]; then
 else
   TEST_SUITE=WorkoutPlusUITests/WorkoutPlusUITests
 fi
+TEST_STATUS=0
 xcodebuild -project 'Workout Plus.xcodeproj' -scheme 'Workout Plus' -configuration Debug \
   -destination "platform=iOS Simulator,id=$QA_DEVICE" -resultBundlePath "$RESULTS" -only-testing:"$TEST_SUITE" \
   CODE_SIGNING_ALLOWED=NO WORKOUT_DEVELOPMENT_TEAM= \
-  WORKOUT_BUNDLE_IDENTIFIER=org.workoutplus.qa WORKOUT_APP_GROUP=group.org.workoutplus.qa test
+  WORKOUT_BUNDLE_IDENTIFIER=org.workoutplus.qa WORKOUT_APP_GROUP=group.org.workoutplus.qa test || TEST_STATUS=$?
 xcrun xcresulttool export attachments --path "$RESULTS" --output-path "${RESULTS%.xcresult}-attachments"
+
+exit "$TEST_STATUS"
