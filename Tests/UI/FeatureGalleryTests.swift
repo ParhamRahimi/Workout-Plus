@@ -35,6 +35,14 @@ final class FeatureGalleryTests: XCTestCase {
         }
         XCTAssertTrue(element.isHittable, "Could not reveal \(element)")
     }
+    private func frameSection(_ element: XCUIElement, _ app: XCUIApplication) {
+        reveal(element, app)
+        let distance = min(0.6, max(0, element.frame.minY / app.frame.height - 0.20))
+        if distance > 0.03 {
+            app.coordinate(withNormalizedOffset: CGVector(dx: 0.12, dy: 0.82))
+                .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.12, dy: 0.82 - distance)))
+        }
+    }
     private func tapText(_ text: String, _ app: XCUIApplication) {
         let target = app.staticTexts[text].firstMatch
         reveal(target, app); target.tap()
@@ -121,10 +129,10 @@ final class FeatureGalleryTests: XCTestCase {
         XCTAssertTrue(app.navigationBars["Progress"].waitForExistence(timeout: 5))
         shot("19-measurement-trends", app)
         let progress = app.staticTexts["Exercise progress"].firstMatch
-        reveal(progress, app)
+        frameSection(progress, app)
         shot("20-exercise-progress", app)
         let volume = app.buttons["By muscle"].firstMatch
-        reveal(volume, app)
+        frameSection(volume, app)
         shot("21-weekly-volume", app)
         app.buttons["By week"].tap()
         shot("36-volume-by-week", app)
