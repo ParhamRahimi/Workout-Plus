@@ -107,10 +107,11 @@ final class FeatureGalleryTests: XCTestCase {
         let session = app.cells.containing(.staticText, identifier: "Workout C — Chest, Side Delts & Arms").firstMatch
         if session.exists { session.tap() }
         else { app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "Workout C")).firstMatch.tap() }
-        XCTAssertTrue(app.navigationBars.buttons.count > 0)
-        shot("17-session-detail", app)
         let set = app.buttons.containing(.staticText, identifier: "Set 1").firstMatch
-        XCTAssertTrue(set.exists); set.tap()
+        XCTAssertTrue(set.waitForExistence(timeout: 10), "Session detail should expose its recorded sets")
+        shot("17-session-detail", app)
+        set.tap()
+        XCTAssertTrue(app.buttons["Save"].waitForExistence(timeout: 5))
         shot("18-edit-recorded-set", app)
     }
 
