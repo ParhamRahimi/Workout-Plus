@@ -48,10 +48,15 @@ reduce volume when necessary, and get instruction for unfamiliar movements.
 
 ## Screenshots
 
-Captured from the isolated simulator with synthetic data.
+Captured from the running app in an isolated simulator with invented records.
+Progress photos are clearly labeled demo illustrations.
 
-<img src="Docs/screenshots/welcome.png" width="260" alt="First-run guidance">
-<img src="Docs/screenshots/plans.png" width="260" alt="Starter plan and a synthetic custom plan">
+<img src="Docs/screenshots/features/01-workouts.png" width="240" alt="Workout plan and next session">
+<img src="Docs/screenshots/features/11-set-logging.png" width="240" alt="Set logging with invented loads">
+<img src="Docs/screenshots/features/21-weekly-volume.png" width="240" alt="Synthetic weekly training volume">
+<img src="Docs/screenshots/features/27-demo-photo-comparison.png" width="240" alt="Comparison of labeled demo illustrations">
+
+[Full feature gallery, capture method, and coverage limits](Docs/SCREENSHOTS.md).
 
 ## Privacy and backups
 
