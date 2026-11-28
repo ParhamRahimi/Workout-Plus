@@ -174,10 +174,10 @@ final class FeatureGalleryTests: XCTestCase {
         XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 5))
         shot("29-settings-rest-and-health", app)
         let remote = app.switches["Allow exercise image downloads"]
-        reveal(remote, app)
+        frameSection(remote, app)
         shot("30-settings-image-controls", app)
         let profile = app.staticTexts["About you"].firstMatch
-        reveal(profile, app)
+        frameSection(profile, app)
         shot("31-optional-profile", app)
         let privacy = app.buttons["Privacy policy"]
         reveal(privacy, app)
